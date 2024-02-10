@@ -2,7 +2,7 @@ name: Rust
 
 on:
   push:
-    branches: [ "main", "test_equality_macros" ]
+    branches: [ "main", "testing_equality_macros" ]
   pull_request:
     branches: [ "main" ]
 
