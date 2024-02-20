@@ -1,4 +1,4 @@
-use std::fmt::format;
+
 
 // pub fn add_two(a: i32) -> i32 {
 //     a + 3
@@ -12,7 +12,7 @@ fn internal_adder(a: i32, b: i32) -> i32 {
     a + b
 }
 
-pub fn greeting(name: &str) -> String {
+pub fn greeting(_name: &str) -> String {
     format!("Hello") // no semi colon
 }
 pub struct Guess {
