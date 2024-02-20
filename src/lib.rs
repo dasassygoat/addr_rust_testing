@@ -1,7 +1,15 @@
 use std::fmt::format;
 
+// pub fn add_two(a: i32) -> i32 {
+//     a + 3
+// }
+
 pub fn add_two(a: i32) -> i32 {
-    a + 3
+    internal_adder(a, 2)
+}
+
+fn internal_adder(a: i32, b: i32) -> i32 {
+    a + b
 }
 
 pub fn greeting(name: &str) -> String {
@@ -28,6 +36,11 @@ mod tests {
     //fn it_adds_two() {
     //  assert_eq!(4, add_two(2));
     //}
+
+    #[test]
+    fn internal(){
+        assert_eq!(4, internal_adder(2, 2));
+    }
 
     #[test]
     fn greeting_contains_name() {
